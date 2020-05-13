@@ -1,0 +1,26 @@
+<button class="addPlaylistBtn" (click)="openPlaylist()">Add PlayList</button>
+
+<div class="newPlayList" *ngIf="openPlaylistbtn">       
+    <div class="form-place">  
+            <div class="form-group">
+                <span style="color: red;">* </span>
+                <label for="name">Name:</label><br>
+                <input placeholder=" Enter playlist Name" class="playlist-input" type="text" id="name" [(ngModel)]="name" required>
+                <span class="error-text" *ngIf="submitted && !isValidName()"> *Enter valid name</span> 
+            </div>
+            <div class="form-group">
+                <span style="color: red;">* </span>
+                <label for="urls">Url's:</label><br>
+                <input placeholder=" Enter playlist video url" class="playlist-input" type="text" name="" id="urls" [(ngModel)]="url" required>
+                <span class="error-text" *ngIf="submitted && !isValidYoutubeUrl()"> *Enter valid youtube URL</span> 
+            </div>     
+            <button  [class]="'submit-btn playlist-btn ' + getDisabledBtnClass()" id="Xbtn"  (click)="addPlayList()" [disabled] = "isSubmitDisabled()">
+                Submit
+            </button> 
+            <button class="close-btn playlist-btn" id="Xbtn"  (click)="close()" [disabled] = "isSubmitDisabled()">
+                Close
+            </button>
+    </div>
+    
+</div>
+

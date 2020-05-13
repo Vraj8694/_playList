@@ -1,0 +1,123 @@
+.newPlayList{
+    border: 1px solid rgb(17, 216, 138);
+    /* border-radius: 5%; */
+    background-color: #07ea8c3d;
+    /* margin-top: 5%; */
+    margin-bottom: 8%;
+    box-shadow: 10px 17px 12px 1px #18de8c3d;
+
+}
+.addPlaylistBtn{
+    margin: 20% 0% 16% 27%;
+    padding: 3% 10%;
+    background-color: #8D84F2;
+    color: white;
+    border: 1px solid rgb(29, 14, 193);
+    border-radius: 5%;
+    outline: none;
+    font-size: medium;
+}
+
+.addPlaylistBtn:disabled,
+.addPlaylistBtn[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.leftPart {
+    /* border-right: 2px solid rgb(224, 205, 205);
+    height: 500px; */
+}
+
+.newPlayList span{
+    /* position: absolute !important;
+    right: 9% !important; 
+    top: 9%!important; */
+    padding-left: 10px;
+    /* border: 0.5 solid seashell;
+    background-color: rgb(92, 184, 221); */
+     cursor: pointer !important; 
+   /* border-radius: 5%; */
+}
+
+.newPlayList form{
+    left: 10% ;
+    position: relative;
+    padding: 5% ;
+}
+.form-place input{
+    width: 75%;
+    border-radius: 7%;
+    border: 1px solid black;
+}
+.form-place button{
+    padding: 2%;
+    background-color: #8D84F2;
+    color: whitesmoke;
+    border: 1px solid rgb(29, 14, 193);
+    border-radius: 5%;
+}
+
+
+.playlist{
+    height: 400px;
+    overflow: scroll;
+}
+.playlist h2{
+    padding: 5%;
+    border-bottom: 1px solid rgb(233, 17, 17);
+    color: cadetblue;
+    /* outline: double; */
+}
+.vid-sec span{
+display: inline;
+margin: 2%;
+}
+.header-ActionsBtn{
+    margin-top: 14%;
+    margin-left: 0%;
+}
+.header-ActionsBtn button{
+    margin: 1%;
+}
+.playList-title{
+    display: flex;
+    padding: 5% 0% 0%;
+    /* border: 1px solid rgb(76, 65, 146); */
+    margin: 1%;
+}
+.playList-title button{
+    margin-left: 2%;
+}
+.playList-title p{
+    /* overflow-x: scroll; */
+}
+.playList-title span{
+    padding: 4%;
+    cursor: pointer;
+}
+.playlist-titles-row{
+    border-top: 1px solid black;
+    margin: 0%;
+    height: 400px;
+    overflow: scroll;
+}
+.play{
+    background-color: rgb(33, 179, 33);
+    color:#fff;
+    border: 1px solid rgb(33, 179, 33);
+    border-radius:9%;
+}
+.pause{
+    background-color: rgb(12, 14, 12);
+    color:#fff;
+    border: 1px solid rgb(12, 14, 12);
+    border-radius:9%;
+}
+.stop{
+    background-color: rgb(219, 60, 20);
+    color:#fff;
+    border: 1px solid rgb(219, 60, 20);
+    border-radius:9%;
+}

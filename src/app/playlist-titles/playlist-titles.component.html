@@ -1,0 +1,18 @@
+<div class="row" class="playlist-titles-row">
+    <div *ngFor="let currentItem of playListData" class="playList-title" >
+        <div class="col-md-5 ">
+            <h5> {{currentItem?.name}} </h5>     
+        </div>
+        <div class="col-md-7">
+            <div>
+                <button (click)="onPlay(currentItem.id)" class="play">Play</button>
+                <button (click)="onPause(currentItem.id)" class="pause">Pause</button>
+                <button (click)="onStop(currentItem.id)" class="stop">stop</button>
+            </div> 
+              
+        </div>
+    </div> 
+    
+</div>
+
+
